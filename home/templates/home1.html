@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Gitam
+{% endblock title %}
+    
+
+{% block content %}
+    
+
+<link rel="stylesheet" href="{% static 'home.css' %}">
+
+<div class="time-picker-container">
+
+    <div class="time-picker">
+      <div class="row time-picker-header">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-today-tab" data-bs-toggle="pill" data-bs-target="#pills-today" type="button" role="tab" aria-controls="pills-home" aria-selected="true">26-09-2023</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-tommorow-tab" data-bs-toggle="pill" data-bs-target="#pills-tommorow" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">27-09-2023</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-daytommorow-tab" data-bs-toggle="pill" data-bs-target="#pills-daytommorow" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">28-09-2023</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-today" role="tabpanel" aria-labelledby="pills-today-tab">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 1</h5>
+                          <li class="time-slot-item">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 2</h5>
+                          <li class="time-slot-item">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 3</h5>
+                          <li class="time-slot-item">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 4</h5>
+                          <li class="time-slot-item">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 5</h5>
+                          <li class="time-slot-item">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="tab-pane fade" id="pills-tommorow" role="tabpanel" aria-labelledby="pills-tommorow-tab">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 1</h5>
+                          <li class="time-slot-item">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 2</h5>
+                          <li class="time-slot-item">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 3</h5>
+                          <li class="time-slot-item">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 4</h5>
+                          <li class="time-slot-item">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 5</h5>
+                          <li class="time-slot-item">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="tab-pane fade" id="pills-daytommorow" role="tabpanel" aria-labelledby="pills-daytommorow-tab">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 1</h5>
+                          <li class="time-slot-item">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 2</h5>
+                          <li class="time-slot-item">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 3</h5>
+                          <li class="time-slot-item">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 4</h5>
+                          <li class="time-slot-item">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">System 5</h5>
+                          <li class="time-slot-item booked">9:00 - 10:00</li>
+                          <li class="time-slot-item">10:00 - 11:00</li>
+                          <li class="time-slot-item">11:00 - 12:00</li>
+                          <li class="time-slot-item">12:00 - 13:00</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+      </div>
+      <h6>Booked</h6>
+      <h6>Booking confirmed</h6>
+    </div>
+    <form method="post">
+        <input type="text" name="selected_date" readonly>
+        <input type="text" name="selected_system" readonly>
+        <input type="text" name="selected_time_slot" readonly>
+        <button id="bookButton" type="submit" class="btn btn-primary" >Book</button>
+    </form>
+
+  </div>
+  
+<script src="{%  static 'home.js' %}"></script>
+{% endblock content %}
+    

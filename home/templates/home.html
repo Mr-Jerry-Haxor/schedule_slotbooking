@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Gitam
+{% endblock title %}
+    
+
+{% block content %}
+    
+
+<link rel="stylesheet" href="{% static 'home.css' %}">
+
+<div class="time-picker-container">
+
+    <div class="time-picker">
+      <div class="row time-picker-header">
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+          {% for date in bookings %}
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-{{ date }}-tab" data-bs-toggle="pill" data-bs-target="#pills-{{ date }}" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{ date }}</button>
+              </li>
+          {% endfor %}
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          {% for date, systems in bookings.items %}
+            <div class="tab-pane fade" id="pills-{{ date }}" role="tabpanel" aria-labelledby="pills-{{ date }}-tab">
+                <div class="container">
+                    <div class="row">
+                      {% for system in systems %}
+                      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
+                        <ul class="time-slot">
+                          <h5 class="time-slot-system">{{ system.0 }}</h5>
+                          <li class="time-slot-item {{ system.1.0 }}">8:00 AM - 10:00 Am</li>
+                          <li class="time-slot-item {{ system.1.1 }}">10:00 Am - 12:00 Noon</li>
+                          <li class="time-slot-item {{ system.1.2 }}">1:00 PM - 3:00 PM</li>
+                          <li class="time-slot-item {{ system.1.3 }}">3:00 PM - 5:00 PM</li>
+                        </ul>
+                      </div>
+                      {% endfor %}
+                      
+                    </div>
+                  </div>
+            </div>
+            {% endfor %}
+          </div>
+      </div>
+      <!-- <h6>Booked</h6>
+      <h6>Booking confirmed</h6> -->
+    </div>
+    <form class="booking-details" method="post" enctype="multipart/form-data"  validate>
+      {% csrf_token %}
+        <input type="text" name="selected_date" readonly required>
+        <input type="text" name="selected_system" readonly required>
+        <input type="text" name="selected_time_slot" readonly required>
+        <button type="submit" value="Submit" class="btn btn-primary">Book</button>
+    </form>
+
+  </div>
+  
+<script src="{%  static 'home.js' %}"></script>
+{% endblock content %}
+    
