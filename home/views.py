@@ -1,7 +1,6 @@
 from django.shortcuts import render , HttpResponse
 from datetime import datetime, timedelta
 from .models import *
-from slot_booking.module import *
 
 # Create your views here.
 
